@@ -5,8 +5,8 @@ WriteMakefile(
     'NAME'		=> 'Math-Big',
     'VERSION_FROM'	=> 'lib/Math/Big.pm', # finds $VERSION
     'PREREQ_PM'		=> { 
-			Math::BigInt => 1.67,
-			Math::BigFloat => 1.41,
+			Math::BigInt => 1.72,
+			Math::BigFloat => 1.46,
 			   },
     'LIBS'		=> [''], # e.g., '-lm'
     'DEFINE'		=> '', # e.g., '-DHAVE_SOMETHING'

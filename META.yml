@@ -1,12 +1,12 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         Math-Big
-version:      1.09
+version:      1.10
 version_from: lib/Math/Big.pm
 installdirs:  site
 requires:
-    Math::BigFloat:                1.41
-    Math::BigInt:                  1.67
+    Math::BigFloat:                1.46
+    Math::BigInt:                  1.72
 
 distribution_type: module
 generated_by: ExtUtils::MakeMaker version 6.17
