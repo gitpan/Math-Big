@@ -6,7 +6,7 @@ README
 LICENSE
 MANIFEST
 NEW
-THANX
+CREDITS
 TODO
 Makefile.PL
 examples/hailstone.pl
@@ -21,3 +21,4 @@ lib/Math/Roman.pm
 t/bigintcpm.t
 t/romanpm.t
 t/bigpm.t
+t/factorspm.t
