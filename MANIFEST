@@ -5,6 +5,7 @@ INSTALL
 README
 LICENSE
 MANIFEST
+SIGNATURE
 NEW
 CREDITS
 TODO
@@ -18,3 +19,4 @@ lib/Math/Big.pm
 lib/Math/Big/Factors.pm
 t/bigpm.t
 t/factorspm.t
+META.yml                                 Module meta-data (added by MakeMaker)

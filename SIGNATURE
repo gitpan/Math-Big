@@ -1,0 +1,48 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.36.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+
+SHA1 128088c3ad5e46619fd5c21fab698872c1dc8df2 BENCHMARK
+SHA1 d377dab7ba9085fd3502046657cf3cbf02cbdb81 BUGS
+SHA1 2c92993c7fa093712a595644e270ebfc24a5c571 CHANGES
+SHA1 cbe2ce2590c744deabf0238627c0b033a5b86222 CREDITS
+SHA1 eb75fcb5a159c89f63369bd0425e69d264e315fd INSTALL
+SHA1 d6a6c30ee6d9ba6b9afab8bbf6a25e1b23c744e0 LICENSE
+SHA1 83c8dc59c3e27e54f4f7f88c4652c0e997a0fc82 MANIFEST
+SHA1 35488e042851cc20106edc5aaba638112b783cda META.yml
+SHA1 405ee500096d68f83dc98c1247ecf480a5b0c24d Makefile.PL
+SHA1 02f831540a9527645a897ca4f9af9d179f63413b NEW
+SHA1 e918021fb5113530b794059295deeed200fb96bb README
+SHA1 2b4c31264d2ecfee703786d4196a20a5ad406908 TODO
+SHA1 c2bbe82659480de8710b9e64a62d47b64dddd2d2 examples/1000.txt
+SHA1 263122974291c950b9f139bc0490ce8ec7e95b8d examples/bigprimes.pl
+SHA1 c09e37f0affe060f26d7d6e182b0d4c45ba0b3ba examples/fib.pl
+SHA1 b57b118469a1a16e54d61206c5bd9077dbb2231a examples/hailstone.pl
+SHA1 8ca42793d8769ec8d0928f11c30f38d96dd54efb examples/prime.pl
+SHA1 2372e986c211bebbfc4739b78eea9875af75e7af lib/Math/Big.pm
+SHA1 5a3bd43d46450ab09ee2dd8d548473e770882283 lib/Math/Big/Factors.pm
+SHA1 afe27f0296166683f050d447d630398192bb6eef t/bigpm.t
+SHA1 77cd33a28f9eb3b17a228a66478018a88b58a78b t/factorspm.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.2-rc1-SuSE (GNU/Linux)
+Comment: When cryptography is outlawed, bayl bhgynjf jvyy unir cevinpl.
+
+iQEVAwUBP9j3sXcLPEOTuEwVAQGKtwf+KMlYGLC9GQkdJ+133VwDXCY2qzIVPmF8
+FfH6oI6spwsYloBwtzvKHGrS6vJV0PI5XVlDc29v66u5p5jRvX/9jctUFeIkVR5D
+O2k1bKXaFdqIY5a0I2ARI+G1BYNtzvhSCIS3tNAAcrVIIfBooFAejSpPoOX8XdL4
+KpCDoMvDz/w4P8+Jx/TkJ+wOQt/BJoIb4HdfbtuayKLBOeVd8NkobhJhVR+aP5cF
+N+k0FaZEMp5hqPS7n+WEilP2+SsiGLSo6gRrb8AO6x9BmaM2PKkmSd/oScyMp7Wd
+eYaZUq1h00VFvo/5wOu3R2TR7wdl+U2qp4d4YhLjdbrY39PGEp2xjQ==
+=Z4V/
+-----END PGP SIGNATURE-----
