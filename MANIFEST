@@ -17,8 +17,6 @@ examples/1000.txt
 lib/Math/BigInt/Constant.pm
 lib/Math/Big.pm
 lib/Math/Big/Factors.pm
-lib/Math/Roman.pm
 t/bigintcpm.t
-t/romanpm.t
 t/bigpm.t
 t/factorspm.t
