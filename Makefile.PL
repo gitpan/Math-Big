@@ -1,40 +1,29 @@
-use ExtUtils::MakeMaker;
 
-sub MY::metafile {
-  package MY;
-  my $self = shift;
-  if (!eval { require YAML; 1 })
-  {
-    warn ("YAML not installed, cannot override metafile"); return $self->SUPER::metafile_target(@_);
-  };
+# We need at least Perl 5.6.2 as BigInt requires this
+require 5.6.2;
+use strict;
 
-  my $node = new YAML::Node {};
+# Load the Module::Install bundled in ./inc/
+use inc::Module::Install;
 
-  $node->{name}                 = $self->{DISTNAME};
-  $node->{version}              = $self->{VERSION};
-  $node->{version_from}         = $self->{VERSION_FROM};
-  $node->{license}              = 'perl';
-  $node->{distribution_type}    = 'module';
-  $node->{generated_by}         = "$self->{DISTNAME} version $self->{VERSION}";
-  $node->{installdirs}          = 'site';
-  $node->{requires}             = $self->{PREREQ_PM};
+# The name of your distribution
+name		'Math-Big';
 
-  my $dump = YAML::Dump( $node );
+# Get most of the details from the primary module
+all_from	'lib/Math/Big.pm';
 
-  $dump =~ s/^(.*)$/\t\$(NOECHO) \$(ECHO) "$1" >>META.yml/gm;
-  $dump =~ s/>>META\.yml/>META.yml/;
+requires	'Math::BigInt'	=> 1.83;
+requires	'Math::BigFloat'=> 1.55;
+requires	'perl'		=> 5.006002;
 
-  return "metafile:\n$dump";
-}
+build_requires	'Test::More'	=> 0.42;
 
-WriteMakefile(
-    'NAME'		=> 'Math-Big',
-    'VERSION_FROM'	=> 'lib/Math/Big.pm', # finds $VERSION
-    'PREREQ_PM'		=> { 
-			Math::BigInt => 1.74,
-			Math::BigFloat => 1.48,
-			   },
-    'LIBS'		=> [''], # e.g., '-lm'
-    'DEFINE'		=> '', # e.g., '-DHAVE_SOMETHING'
-    'INC'		=> '', # e.g., '-I/usr/include/other'
-);
+license		'perl';
+
+author		'Tels <nospam-abuse@bloodgate.com>';
+
+# Do not index these
+no_index	directory	=> 'examples';
+
+# Generate the Makefile
+WriteAll;
